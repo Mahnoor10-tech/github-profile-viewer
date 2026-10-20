@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GitHub Profile Viewer</h1>
+        <p>Explore GitHub profiles and repositories</p>
+    </header>
+
+    <main>
+        <form id="search-form">
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter GitHub username"
+                required
+            >
+            <button type="submit" id="search-button">Search</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <section id="profile"></section>
+
+        <section id="repositories-section" hidden>
+            <h2>Repositories</h2>
+            <div id="repositories"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with HTML, CSS and JavaScript</p>
+    </footer>
+</body>
+</html>

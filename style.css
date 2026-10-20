@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #364c70;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 35px 16px;
+    background: #3b507d;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: 30px auto;
+    min-height: 60vh;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#username {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #6b97f6;
+    color: rgb(19, 5, 5);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #01081b;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#message {
+    text-align: center;
+    color: #475569;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 24px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px #17203312;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    overflow-wrap: anywhere;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.profile-info a,
+.repo-card a {
+    color: #2563eb;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#repositories-section {
+    margin-top: 30px;
+}
+
+#repositories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+}
+
+.repo-card {
+    padding: 18px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #17203312;
+    overflow-wrap: anywhere;
+}
+
+.repo-card h3 {
+    margin-top: 0;
+}
+
+.repo-card p {
+    color: #64748b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+@media (max-width: 520px) {
+    #search-form {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .stats {
+        justify-content: center;
+    }
+}
